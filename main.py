@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import colors
 import position
-from twophase import solve
+from kociemba import solve
 import threading
 from cube3d import RubiksCube
 
@@ -18,11 +18,7 @@ def create_cube(solution, start_position):
 
 
 def find_solution(scramble):
-    try:
-        solution = solve(scramble)
-    except:
-        solution = 'not found'
-
+    solution = solve(scramble)
     return solution
 
 
@@ -49,7 +45,7 @@ def create_mask(hsv):
     red_mask = red_mask1 | red_mask2
     yellow_mask = cv2.inRange(hsv, colors.lower_yellow, colors.upper_yellow)
     mask = orange_mask | green_mask | blue_mask | white_mask | red_mask1 | yellow_mask
-    mask_list = (white_mask, red_mask1, green_mask, yellow_mask, orange_mask, blue_mask)
+    mask_list = (white_mask, red_mask, green_mask, yellow_mask, orange_mask, blue_mask)
     return mask, mask_list
 
 

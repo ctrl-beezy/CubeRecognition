@@ -1,29 +1,29 @@
 import numpy as np
 
 
-lower_white = np.array([0, 0, 100])
-upper_white = np.array([179, 43, 255])
+lower_white = np.array([0, 0, 240])
+upper_white = np.array([179, 40, 255])
 
-lower_yellow = np.array([28, 50, 0])
-upper_yellow = np.array([42, 255, 255])
+lower_yellow = np.array([30, 30, 190])
+upper_yellow = np.array([45, 200, 255])
 
-lower_orange = np.array([0, 100, 0])
-upper_orange = np.array([21, 200, 255])
+lower_orange = np.array([0, 40, 200])
+upper_orange = np.array([30, 144, 255])
 
-lower_green = np.array([45, 50, 0])
-upper_green = np.array([85, 255, 255])
+lower_green = np.array([40, 35, 150])
+upper_green = np.array([80, 220, 255])
 
-lower_blue = np.array([95, 180, 0])
-upper_blue = np.array([130, 255, 255])
+lower_blue = np.array([80, 60, 100])
+upper_blue = np.array([160, 200, 255])
 
 # lower_red = np.array([156, 234, 0])
 # upper_red = np.array([179, 255, 255])
 
-lower_red1 = np.array([155, 150, 0])
+lower_red1 = np.array([160, 120, 40])
 upper_red1 = np.array([179, 255, 255])
 
-lower_red2 = np.array([0, 200, 0])
-upper_red2 = np.array([5, 255, 255])
+lower_red2 = np.array([0, 120, 50])
+upper_red2 = np.array([10, 255, 255])
 
 
 pieces_colors = {
